@@ -1,7 +1,5 @@
 package LAB;
-
-public class Booktest {
- static class Book{
+  class Book{
     private int publish;
     double price;
     String title;
@@ -26,6 +24,8 @@ public void display(){//it is object belong to main class
 
   }
  }
+public class Booktest {
+
     public static void main(String[] args) {
      Book book1 = new Book();
      Book book2 = new Book("Game of Trones","George martin",2005,200);
