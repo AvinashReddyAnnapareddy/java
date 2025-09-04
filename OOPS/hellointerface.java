@@ -22,7 +22,7 @@ class avon implements bicycle,horn{
         System.out.println("pee poo peee pooo horn blow");
      }
 }
-public class interface_{
+public class hellointerface{
     public static void main(String[] args) {
       avon z=new avon();
       z.applybreak(1);

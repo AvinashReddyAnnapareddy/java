@@ -30,5 +30,7 @@ public class abstract_meth{
         basechild c=new basechild();
         c.greet();
         //basechild2 c=new basechild2(); object cannot be created 
+        base z=new basechild();
+        z.greet();
       }
 }

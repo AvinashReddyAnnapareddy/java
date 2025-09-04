@@ -10,11 +10,11 @@ class bases{
         System.out.println("i am in base setting x now");
         this.x = x;
     }
-      bases(){
+    public  bases(){
         System.out.println("i am constructor");
        
     }
-    bases(int x){
+   public bases(int x){
          System.out.println("i am overloaded constructor a as"+x);
     }
 

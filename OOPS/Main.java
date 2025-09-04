@@ -1,0 +1,39 @@
+package OOPS;
+
+public class Main {
+    int modelYear;
+    String modelName;
+
+    // Constructor with one parameter
+    public Main(String modelName) {
+        // Call the two-parameter constructor with a default year
+        this.modelName=modelName;// Using 0 as a placeholder for "year not specified"
+    }
+
+    // Constructor with two parameters
+    public Main(int modelYear, String modelName) {
+        // Use 'this' to assign values to the class variables
+        this.modelYear = modelYear;
+        this.modelName = modelName;
+    }
+
+    // Method to print car information
+    public void printInfo() {
+        if (modelYear == 0) {
+            System.out.println("Year not specified: " + modelName);
+        } else {
+            System.out.println(modelYear + " " + modelName);
+        }
+    }
+
+    public static void main(String[] args) {
+        // Create a car with only model name (uses default year)
+        Main car1 = new Main("Corvette");
+
+        // Create a car with both model year and name
+        Main car2 = new Main(1969, "Mustang");
+
+        car1.printInfo();
+        car2.printInfo();
+    }
+}

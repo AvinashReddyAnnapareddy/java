@@ -27,6 +27,9 @@ public class Constructors {
     public static void main(String[] args) {
         mainemployee avi=new mainemployee("avinash",12);
               System.out.println(avi.getAge());
+
+              System.out.println(avi.getName());
+              avi.setName("hello");
               System.out.println(avi.getName());
     }
 }

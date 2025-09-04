@@ -9,7 +9,8 @@ public class spacecraft {
     }
      public static void main(String[] args) {
         starship z=new starship(200, 0, null, 0);
-         z.getwrapspeed();
+        double x= z.getwrapspeed();
+        System.out.println(x);
      }
 }
 class spaceship extends spacecraft{
@@ -25,7 +26,7 @@ class starship extends spaceship{
           super(crewsize, name, fuelCapacity);
           this.warpSpeed=warpSpeed;
     }
-     int     getwrapspeed(){
+     public double  getwrapspeed(){
         return warpSpeed;
     }
 }
